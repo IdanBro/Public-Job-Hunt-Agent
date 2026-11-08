@@ -1,0 +1,55 @@
+# Which skills go on which CV. Every item must also be a true skill in cv/master.yaml or
+# cv/skills-inventory.md (levels and evidence live there).
+#
+# always:  on every CV, whatever the job.
+# variant: always on that variant's CV. On the other variant's CV only if the job ad mentions it.
+# job:     only on a CV whose job ad mentions it.
+# "Mentions" includes the ad naming a clear synonym or an obvious sibling (the routine judges this).
+# Familiar-level skills are listed in the Skills section only, never in bullets.
+#
+# never_claim: skills the candidate doesn't have. validate_tailored rejects them in the Skills section.
+# never_name:  words that must never appear in CV text (personal project names, spelled-out unclaimed skills).
+always:
+  - GitLab CI/CD
+  - GitHub Actions
+  - Helm
+  - "AWS (EC2, EKS, S3, IAM)"
+  - Kubernetes
+  - Docker
+  - Python
+  - Bash
+  - Java
+  - Kafka
+  - MongoDB
+  - PostgreSQL
+  - Claude Code
+  - agentic workflows
+  - subagents
+  - MCP
+  - context engineering
+variant:
+  devops:
+    - Jenkins
+    - Ansible
+    - Terraform
+    - k3d
+    - Prometheus
+    - Grafana
+  software:
+    - Spring
+    - Node.js
+    - Redis
+job:
+  - Argo CD
+  - Docker Compose
+  - Microservices
+  - JUnit
+  - pytest
+  - Linux
+  - mentoring
+never_claim:
+  - Go
+  - Rust
+never_name:
+  - golang
+  - ProjectNebula

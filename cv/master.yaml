@@ -1,0 +1,86 @@
+# Master CV: the single source of truth about the candidate.
+#
+# THIS CANDIDATE IS FICTIONAL. "Jordan Avery", the employers and every number below are made up so the
+# repository can be shared publicly. Replace this file, the two variants, cv/skills-inventory.md and
+# cv/skill-policy.yaml with your own CV to use the agent.
+#
+# Every variant and every per-job tailored CV may only use facts from this file and cv/skills-inventory.md.
+# Text fields are Typst markup (see cv/template.typ).
+
+name: Jordan Avery
+headline: DevOps / Platform Engineer
+contact:
+  location: Tel Aviv, Israel
+  phone: +972 50-000-0000
+  email: jordan.avery@example.com
+  linkedin: linkedin.com/in/example
+  github: github.com/example
+
+summary: >-
+  DevOps / Platform Engineer with 6 years of hands-on experience building CI/CD, Kubernetes platforms and
+  backend services. Founding member of a platform team supporting 14 development teams across 120
+  repositories, and previously a backend engineer on high-throughput data pipelines.
+  #link("https://example.com/blog/zero-touch-runners")[Wrote a technical article] on zero-touch CI runner
+  provisioning. Hands-on engineer with strong ownership, known for building capabilities from scratch.
+
+experience:
+  - title: Independent DevOps & AI Projects
+    dates: Oct 2026 - Present
+    bullets:
+      - >-
+        Built an *autonomous AI agent* on *Claude Code* that runs hourly in the cloud: pulls jobs from 80+ career
+        boards and email via *MCP connectors*, scores fit, and sends each strong match with a tailored,
+        fact-validated CV to *Telegram*.
+      - >-
+        Delivered a hardened Kubernetes service (Helm, k3d, Prometheus/Grafana, NetworkPolicy, PDBs) with an
+        *agentic workflow* of Claude Code *subagents*, steered by *context engineering* (CLAUDE.md, skills, hooks).
+
+  - title: Platform Engineer
+    org: Northwind Cloud (fictional)
+    dates: Mar 2023 - Sep 2026
+    bullets:
+      - >-
+        Founding engineer of the platform team: owned CI/CD and deployment workflows for 14 development teams
+        across 120 repositories and their Kubernetes deployments.
+      - >-
+        Built shared GitLab CI/CD templates and a Helm chart library that cut a new service's path to production
+        from days to under an hour.
+      - >-
+        Ran self-service ephemeral environments on k3d for every merge request, with automated E2E tests.
+      - >-
+        Automated CI runner provisioning with Ansible and Terraform, and wrote the team's on-call runbooks.
+      - >-
+        Introduced Prometheus/Grafana dashboards and alerts for every service, and led incident reviews.
+
+  - title: Backend Engineer
+    org: Globex Data (fictional)
+    dates: Jun 2020 - Feb 2023
+    bullets:
+      - >-
+        Developed Java/Spring microservices and Kafka streaming components for a data platform processing
+        events from 30 product teams.
+      - >-
+        Built reusable integration-testing libraries and GitLab CI pipelines covering Kafka, MongoDB and
+        PostgreSQL services.
+      - >-
+        Moved the team's deployments from hand-run scripts to Helm on Kubernetes, with zero-downtime rollouts.
+      - >-
+        Wrote Python tooling for data backfills and schema migrations.
+
+skills:
+  - category: CI/CD & Automation
+    items: [GitLab CI/CD, GitHub Actions, Jenkins, Ansible, Terraform, Helm]
+  - category: Cloud & Containers
+    items: ["AWS (EC2, EKS, S3, IAM)", Kubernetes, k3d, Docker]
+  - category: Observability
+    items: [Prometheus, Grafana]
+  - category: Programming & Scripting
+    items: [Python, Bash, Java, Spring, Node.js]
+  - category: Data & Messaging
+    items: [Kafka, MongoDB, PostgreSQL, Redis]
+  - category: AI & Agents
+    items: [Claude Code, agentic workflows, subagents, MCP, context engineering]
+
+education:
+  - title: B.Sc. Computer Science
+    detail: Example University | 2020

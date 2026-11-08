@@ -1,0 +1,98 @@
+# Companies whose public ATS board the agent fetches every run.
+# ats: greenhouse | lever | ashby | comeet. board: the company's name in that ATS's URL;
+# for comeet it's "<slug>/<uid>" from the career page URL (comeet.com/jobs/<slug>/<uid>).
+# Find new ones with: python -m jobagent discover "Company Name" ... (or a comeet.com/jobs/... URL)
+# Seeded 2026-10-25 from a probe of ~180 Israeli tech companies, keeping boards with Israel jobs.
+# Expanded the same day with a second probe of ~250 more names (+13 boards).
+# Removed 2026-10-26: Beach Bum, Mixtiles, Obligo, Paxos, Unit, Nanit (few or no engineering roles in Israel).
+
+- {name: Apiiro, ats: greenhouse, board: apiiro}
+- {name: AppsFlyer, ats: greenhouse, board: appsflyer}
+- {name: Axonius, ats: greenhouse, board: axonius}
+- {name: BigID, ats: greenhouse, board: bigid}
+- {name: Cato Networks, ats: greenhouse, board: catonetworks}
+- {name: Cloudinary, ats: lever, board: cloudinary}
+- {name: Connecteam, ats: greenhouse, board: connecteam}
+- {name: Cymulate, ats: greenhouse, board: cymulate}
+- {name: Databricks, ats: greenhouse, board: databricks}
+- {name: Datadog, ats: greenhouse, board: datadog}
+- {name: Datarails, ats: greenhouse, board: datarails}
+- {name: Descope, ats: greenhouse, board: descope}
+- {name: Elastic, ats: greenhouse, board: elastic}
+- {name: Forter, ats: greenhouse, board: forter}
+- {name: Gong, ats: greenhouse, board: gongio}
+- {name: HoneyBook, ats: ashby, board: honeybook}
+- {name: Island, ats: greenhouse, board: island}
+- {name: JFrog, ats: greenhouse, board: jfrog}
+- {name: Lemonade, ats: ashby, board: lemonade}
+- {name: Lightrun, ats: greenhouse, board: lightrun}
+- {name: Melio, ats: greenhouse, board: melio}
+- {name: Mend.io, ats: ashby, board: mend-io}
+- {name: MongoDB, ats: greenhouse, board: mongodb}
+- {name: Moon Active, ats: ashby, board: moonactive}
+- {name: Nexxen, ats: ashby, board: nexxen}
+- {name: NICE, ats: greenhouse, board: nice}
+- {name: Optimove, ats: greenhouse, board: optimove}
+- {name: Orca Security, ats: greenhouse, board: orcasecurity}
+- {name: Payoneer, ats: greenhouse, board: payoneer}
+- {name: Riskified, ats: greenhouse, board: riskified}
+- {name: Safebreach, ats: greenhouse, board: safebreach}
+- {name: Salt Security, ats: greenhouse, board: saltsecurity}
+- {name: Similarweb, ats: greenhouse, board: similarweb}
+- {name: Sisense, ats: ashby, board: sisense}
+- {name: Sweet Security, ats: greenhouse, board: sweetsecurity}
+- {name: Taboola, ats: greenhouse, board: taboola}
+- {name: Token Security, ats: greenhouse, board: tokensecurity}
+- {name: Torq, ats: greenhouse, board: torq}
+- {name: Transmit Security, ats: greenhouse, board: transmitsecurity}
+- {name: Unframe, ats: greenhouse, board: unframe}
+- {name: Via, ats: greenhouse, board: via}
+- {name: WalkMe, ats: lever, board: walkme}
+- {name: Wiz, ats: greenhouse, board: wizinc}
+- {name: Yotpo, ats: greenhouse, board: yotpo}
+- {name: Zscaler, ats: greenhouse, board: zscaler}
+
+# Comeet career pages (added 2026-10-26). Comeet's API is admin-only, but each public page embeds its job list.
+- {name: AllCloud, ats: comeet, board: allcloud/71.008}
+- {name: Alice, ats: comeet, board: alice/D5.005}
+- {name: Buildots, ats: comeet, board: buildots/36.004}
+- {name: Checkmarx, ats: comeet, board: checkmarx/C0.008}
+- {name: Classiq, ats: comeet, board: classiq/F7.008}
+- {name: Claroty, ats: comeet, board: Claroty/F2.004}
+- {name: CommIT, ats: comeet, board: comm-it/76.008}
+- {name: Cognyte, ats: comeet, board: cognyte/F2.009}
+- {name: Coralogix, ats: comeet, board: coralogix/06.004}
+- {name: Deloitte Israel, ats: comeet, board: deloitte/F7.00B}
+- {name: Dream, ats: comeet, board: dreamgroup/99.002}
+- {name: DriveNets, ats: comeet, board: drivenets/72.006}
+- {name: Dualbird, ats: comeet, board: dualbird/2B.00C}
+- {name: Fetcherr, ats: comeet, board: fetcherr/68.006}
+- {name: Global-e, ats: comeet, board: global-e/62.002}
+- {name: Guesty, ats: comeet, board: guesty/10.000}
+- {name: Infinidat, ats: comeet, board: infinidat/D6.003}
+- {name: Kaltura, ats: comeet, board: kaltura/E2.00D}
+- {name: Kela Technologies, ats: comeet, board: kelatechnologies/2A.007}
+- {name: KPMG Somekh Chaikin, ats: comeet, board: somekhchaikin/F3.007}
+- {name: Linx Security, ats: comeet, board: linxsecurity/99.00C}
+- {name: Lusha, ats: comeet, board: lusha/73.00B}
+- {name: Noma Security, ats: comeet, board: noma_security/3A.005}
+- {name: Oligo Security, ats: comeet, board: oligosecurity/5A.00B}
+- {name: OX Security, ats: comeet, board: ox_security/f8.006}
+- {name: Papaya Global, ats: comeet, board: papayaglobal/16.005}
+- {name: Pentera, ats: comeet, board: pentera/C5.00D}
+- {name: Quantum Machines, ats: comeet, board: quantummachines/D6.000}
+- {name: Quicklizard, ats: comeet, board: quicklizard/C9.004}
+- {name: Rapyd, ats: comeet, board: rapyd/73.00E}
+- {name: Riverside, ats: comeet, board: riverside-fm/66.009}
+- {name: Shield, ats: comeet, board: shieldfc/A5.00E}
+- {name: Silverfort, ats: comeet, board: silverfort/54.007}
+- {name: SolarEdge, ats: comeet, board: solaredge/71.00A}
+- {name: Stampli, ats: comeet, board: stampli/f6.007}
+- {name: Sunbit, ats: comeet, board: sunbit/37.001}
+- {name: Team8 portfolio, ats: comeet, board: team8/61.003}
+- {name: ThetaRay, ats: comeet, board: thetaray/72.00F}
+- {name: Upwind Security, ats: comeet, board: upwind/49.004}
+- {name: UVeye, ats: comeet, board: uveye/92.00F}
+- {name: VAST Data, ats: comeet, board: vastdata/43.001}
+- {name: Zenity, ats: comeet, board: zenity/19.000}
+- {name: Zafran Security, ats: ashby, board: zafran-security}

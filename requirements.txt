@@ -1,0 +1,7 @@
+# Runtime dependencies (the routine installs these each run).
+# Ranges, not pins, for requests and PyYAML: the cloud image ships Debian's copies,
+# which pip can't uninstall, so a pin to a different version breaks the install.
+typst==0.15.0
+requests>=2.31,<3
+PyYAML>=6.0,<7
+openpyxl>=3.1,<4

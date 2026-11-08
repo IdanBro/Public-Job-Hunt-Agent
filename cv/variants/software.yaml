@@ -1,0 +1,74 @@
+# Role variant: Software / Backend / Data jobs. Built only from cv/master.yaml and cv/skills-inventory.md.
+# The candidate is fictional (see cv/master.yaml).
+
+name: Jordan Avery
+headline: Backend / Software Engineer
+contact:
+  location: Tel Aviv, Israel
+  phone: +972 50-000-0000
+  email: jordan.avery@example.com
+  linkedin: linkedin.com/in/example
+  github: github.com/example
+
+summary: >-
+  Backend Engineer with 6 years of hands-on experience: Java/Spring microservices and Kafka streaming on a data
+  platform, then platform engineering for 14 development teams across 120 repositories. Writes production
+  services and the CI/CD, testing and Kubernetes tooling that ships them.
+  #link("https://example.com/blog/zero-touch-runners")[Wrote a technical article] on zero-touch CI runner
+  provisioning. Hands-on engineer with strong ownership.
+
+experience:
+  - title: Independent DevOps & AI Projects
+    dates: Oct 2026 - Present
+    bullets:
+      - >-
+        Built an *autonomous AI agent* on *Claude Code* that runs hourly in the cloud: pulls jobs from 80+ career
+        boards and email via *MCP connectors*, scores fit, and sends each strong match with a tailored,
+        fact-validated CV to *Telegram*.
+      - >-
+        Delivered a hardened Kubernetes service (Helm, k3d, Prometheus/Grafana, NetworkPolicy, PDBs) with an
+        *agentic workflow* of Claude Code *subagents*, steered by *context engineering* (CLAUDE.md, skills, hooks).
+
+  - title: Platform Engineer
+    org: Northwind Cloud (fictional)
+    dates: Mar 2023 - Sep 2026
+    bullets:
+      - >-
+        Built shared GitLab CI/CD templates and a Helm chart library that cut a new service's path to production
+        from days to under an hour.
+      - >-
+        Founding engineer of the platform team: owned CI/CD and deployment workflows for 14 development teams
+        across 120 repositories and their Kubernetes deployments.
+      - >-
+        Ran self-service ephemeral environments on k3d for every merge request, with automated E2E tests.
+
+  - title: Backend Engineer
+    org: Globex Data (fictional)
+    dates: Jun 2020 - Feb 2023
+    bullets:
+      - >-
+        Developed Java/Spring microservices and Kafka streaming components for a data platform processing
+        events from 30 product teams.
+      - >-
+        Built reusable integration-testing libraries and GitLab CI pipelines covering Kafka, MongoDB and
+        PostgreSQL services.
+      - >-
+        Wrote Python tooling for data backfills and schema migrations.
+      - >-
+        Moved the team's deployments from hand-run scripts to Helm on Kubernetes, with zero-downtime rollouts.
+
+skills:
+  - category: Programming & Scripting
+    items: [Java, Spring, Python, Node.js, Bash]
+  - category: Data & Messaging
+    items: [Kafka, MongoDB, PostgreSQL, Redis]
+  - category: CI/CD & Automation
+    items: [GitLab CI/CD, GitHub Actions, Helm]
+  - category: Cloud & Containers
+    items: ["AWS (EC2, EKS, S3, IAM)", Kubernetes, Docker]
+  - category: AI & Agents
+    items: [Claude Code, agentic workflows, subagents, MCP, context engineering]
+
+education:
+  - title: B.Sc. Computer Science
+    detail: Example University | 2020

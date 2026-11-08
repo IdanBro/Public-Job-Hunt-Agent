@@ -1,0 +1,17 @@
+# Secrets never go in git
+.env
+*.env
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local build output and per-run scratch
+out/
+work/
+.pytest_cache/
+
+# Agent state lives on the `state` branch, not on main
+state/
